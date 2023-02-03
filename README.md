@@ -8,7 +8,7 @@ Instructor: [Prof. Taku Komura](https://www.cs.hku.hk/index.php/people/academic-
 
 TAs: @[Mingyi Shi](https://rubbly.cn)  @[Huancheng Lin](https://github.com/LamWS) 
 
-![cover](https://user-images.githubusercontent.com/7709951/212983788-cf6feaed-c81c-4b99-8638-d7cf2a8f9328.jpg)
+![cover](https://user-images.githubusercontent.com/43705353/216566280-3931d201-2814-4e2b-bb65-c64143d9215c.png)
 
 ## Assignment 1 - Basic Character Animation
 
