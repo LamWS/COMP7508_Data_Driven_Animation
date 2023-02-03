@@ -1,6 +1,6 @@
 # COMP7508 Data-Driven Computer Animation
 
-Welcome to the COMP3360 in year 2023! 
+Welcome to the COMP7508 in year 2023! 
 
 Here is the code repository of HKU course COMP7508. Any commit and issue will be welcome. 
 
