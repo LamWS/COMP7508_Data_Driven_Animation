@@ -40,6 +40,9 @@ class CameraCtrl(DirectObject):
         self._locked_mouse_pos = None
         self._mouse_id = -1
 
+        self.pre_position_x = 0
+        self.pre_position_y = 0
+
         self.look()
 
     def look(self):
@@ -48,7 +51,15 @@ class CameraCtrl(DirectObject):
 
     @property
     def _mousePos(self):
-        return pc.LVector2(self.base.mouseWatcherNode.getMouseX(), self.base.mouseWatcherNode.getMouseY())
+        try:
+            cur_position_x = self.base.mouseWatcherNode.getMouseX()
+            cur_position_y = self.base.mouseWatcherNode.getMouseY()
+        except:
+            cur_position_x = self.pre_position_x
+            cur_position_y = self.pre_position_y
+        self.pre_position_x = cur_position_x
+        self.pre_position_y = cur_position_y
+        return pc.LVector2(cur_position_x, cur_position_y)
 
     def _lockMouseInfo(self):
         self._locked_info = (pc.LVector3(self.position),
