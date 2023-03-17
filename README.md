@@ -37,7 +37,11 @@ TBA
 - Core code implementation of Inverse Kinematics - CCD IK (Task 3, Bonus)
 - Report (10%)
 
-## Assignment 2 - TBA
+## Assignment 2 - Animation Processing and Scripting
+
+This assignment will teach you how to play with animation data by different algorithms like the interpolation, DTW (Dynamic Time Warping) and a Motion Matching. 
+
+Detials: [[subfolder](./assignment_2)]
 
 ## Assignment 3 - TBA
 
