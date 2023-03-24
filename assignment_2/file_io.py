@@ -1,5 +1,6 @@
 import copy
 import numpy as np
+import scipy.signal as signal
 from scipy.spatial.transform import Rotation as R
 
 def load_meta_data(bvh_path):
@@ -107,16 +108,20 @@ class BVHMotion():
         pass
     
     def load_motion(self, bvh_file_path):
-        self.joint_name, self.joint_parent, self.joint_channel, joint_offset = \
+        self.joint_name, self.joint_parent, self.joint_channel, self.joint_offset = \
             load_meta_data(bvh_file_path)
         
-        _, self.local_joint_positions, self.local_joint_rotations = load_motion_data(bvh_file_path)
+        self.motion_data, self.local_joint_positions, self.local_joint_rotations = load_motion_data(bvh_file_path)
 
-    def batch_forward_kinematics(self, joint_position = None, joint_rotation = None):
+    def batch_forward_kinematics(self, joint_position=None, joint_rotation=None):
         if joint_position is None:
             joint_position = self.local_joint_positions
         if joint_rotation is None:
             joint_rotation = self.local_joint_rotations
+        
+        if len(joint_position.shape) == 2:
+            joint_position = joint_position.reshape(1, -1, 3).copy()
+            joint_rotation = joint_rotation.reshape(1, -1, 4).copy()
         
         joint_translation = np.zeros_like(joint_position)
         joint_orientation = np.zeros_like(joint_rotation)
