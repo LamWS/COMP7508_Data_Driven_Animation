@@ -191,9 +191,11 @@ def substep():
     body_rotation[None] = quaternion_to_matrix(body_rotation_quaternion[None])
 
     # TODO 7: update, the angular momentum, inertia tensor and angular velocity
+    # hint: use A @ B to do matrix multiplication, use A.transpose() to get the transpose of A
     # body_angular_momentum[None] =
-    # body_inverse_inertia_body[None] =
+    # body_inverse_inertia = 
     # body_angular_velocity[None] =
+
 
     # update the particles
     for i in ti.grouped(particle_vertices):
