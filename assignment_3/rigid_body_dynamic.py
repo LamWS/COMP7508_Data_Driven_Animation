@@ -179,8 +179,8 @@ def substep():
 
     # update the rigid body
     # TODO 5: update the center of mass position and velocity
-    # body_cm_position[None] +=
     # body_velocity[None] +=
+    # body_cm_position[None] +=
 
     # TODO 6: update the rotation quaternion
     # d_q = 0.5 * quaternion_multiplication(ti.Vector([0, ?, ?, ?]), body_rotation_quaternion[None])
@@ -216,7 +216,7 @@ vertices_list = [
 for i in range(len(vertices_list)):
     frame_vertices[i] = ti.Vector(vertices_list[i])
 
-window = ti.ui.Window("Cloth Simulation", (1024, 1024),
+window = ti.ui.Window("Rigid Body Simulation", (1024, 1024),
                       vsync=True)
 canvas = window.get_canvas()
 canvas.set_background_color((1, 1, 1))
