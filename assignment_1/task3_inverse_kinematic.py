@@ -91,13 +91,18 @@ def inverse_kinematics(meta_data, global_joint_positions, global_joint_orientati
                 '''
                 
                 ########## Code Start ############
-                
 
+                vec_cur2end = norm(chain_positions[end_idx] - chain_positions[current_idx])
+                vec_cur2tar = norm(target_pose - chain_positions[current_idx])
 
+                axis = norm(np.cross(vec_cur2end, vec_cur2tar))
+                rot = np.arccos(np.vdot(vec_cur2end, vec_cur2tar))
 
+                if np.isnan(rot):
+                    continue
 
-
-
+                rotate_vector = R.from_rotvec(rot * axis)
+                chain_orientations[current_idx] = rotate_vector * chain_orientations[current_idx]
                 
                 ########## Code End ############
 
