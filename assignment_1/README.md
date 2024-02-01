@@ -100,7 +100,7 @@ Vector and Rotation
 
 In this task, we will load the data from the BVH file and visualize the skeleton based on two data types - Offset and Rotation. For convenience, almost code modules (file parse, visualization) have been given, and only core implementation needs to be filled.
 
-You are required to implement two functions in *[task2_forward_kinematic.py](https://github.com/LamWS/COMP7508_Data_Driven_Animation/blob/2024/assignment_1/task2_forward_kinematic.py "task2_forward_kinematic.py").*
+You are required to implement two functions in (Pls find the code in HKU moodle course page) *[task2_forward_kinematic.py](https://github.com/LamWS/COMP7508_Data_Driven_Animation/blob/2024/assignment_1/task2_forward_kinematic.py "task2_forward_kinematic.py").*
 
 1. Starting from Line 8, there is a function called *part1_show_T_pose*. We should fill in the code based on the instruction. Then uncomment line 131 and run the script for calling the function. You can see a T-Pose centered with (0, 0, 0).
 2. Starting from Line 45, there is a function called *part2_forward_kinametic*. We should fill in the code based on the instruction. Then uncomment line 134 and run the script for calling the function. You can see a walking motion if show_animation is set to True otherwise a static
@@ -129,7 +129,7 @@ The CCD IK is the default option in the code, we provided all code modules alrea
    5. Update chain orentation
    6. move the cursor to P2
 
-You are required to run with *[task3_inverse_kinematic.py](https://github.com/LamWS/COMP7508_Data_Driven_Animation/blob/2024/assignment_1/task3_inverse_kinematic.py)* and try different IK settings(iteration number/start joint/end joint/target position), then report them with a screenshot and comparison table.
+You are required to run with (Pls find the code in HKU moodle course page) *[task3_inverse_kinematic.py](https://github.com/LamWS/COMP7508_Data_Driven_Animation/blob/2024/assignment_1/task3_inverse_kinematic.py)* and try different IK settings(iteration number/start joint/end joint/target position), then report them with a screenshot and comparison table.
 
 ```python
 # Inside the main function, you need to remove the commend in the beginning for testing different IK configrations
