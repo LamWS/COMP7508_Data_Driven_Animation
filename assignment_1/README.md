@@ -1,8 +1,8 @@
 # Assignment 1 - Basic Character Animation
 
-<!-- ## Highlights
+Submission DDL: Feb. 17th
 
-* Submission DDL: Feb. 28th -->
+All the code is available from HKU moodle
 
 ## Introduction
 
