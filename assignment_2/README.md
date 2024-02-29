@@ -2,7 +2,7 @@
 
 ## Highlights
 
-* Submission DDL: 18th, March (Mon)
+* Submission DDL: 20th, March (Wed)
 
 ## Introduction
 
@@ -40,13 +40,12 @@ As same as assignment 1, the Task 1 & 2 also requires Python 3 runtime and Panda
 
 ```shell
 # recommend to use Anaconda to manage enviroment 
-conda create -n comp3360 python=3.8
-conda activate comp3360
+conda create -n comp7580 python=3.8
+conda activate comp7580
 conda install numpy scipy
 pip install panda3d
 
 # Enviromtns verification. After running, you should see a skeleton in a 3D space
-# If you are using Appli-Silicon Chip and meet black screen problem, check this ISSUE: https://github.com/Shimingyi/COMP3360_Data_Driven_Animation/issues/4
 cd ./assignment_2
 python env_test.py
 ```
@@ -96,7 +95,7 @@ More Tips:
 
 For this task, you will be responsible for developing two interpolation functions and implementing them using various keyframing settings. By default, we require that you utilize linear interpolation for position data and slerp for rotation data.
 
-You are required to implement the interpolation functions at line 43 in *[task1_motion_editing.py](https://github.com/Shimingyi/COMP3360_Data_Driven_Animation/blob/2024/assignment_2/task1_motion_editing.p "task2_forward_kinematic.py").* After doing so, you should uncomment lines 184-187 one by one and execute the script in order to call the function. Successful execution should result in a walking motion being displayed.
+You are required to implement the interpolation functions at line 43 in *[task1_motion_editing.py](https://github.com/LamWS/COMP7508_Data_Driven_Animation/blob/2024/assignment_2/task1_motion_editing.py).* After doing so, you should uncomment lines 184-187 one by one and execute the script in order to call the function. Successful execution should result in a walking motion being displayed.
 
 From Line 53, the primary keyframing process is detailed. First, the motion data is loaded, and then keyframes is taken every N (time_step) frames. Next, the interpolation function is called to generate M (target_step) posed frames. If N > M, the motion will play out more slowly, and if N < M, it will be faster. No modifications are required for this section of code.
 
@@ -106,7 +105,7 @@ Screenshot of walking motion will be expected in the assignment report.
 
 In this task, you will be required to implement a simple method for concatenating two distinct motions: walking and running. These motions are positioned globally in different locations and have distinct motion styles, directions, and velocities. As such, you will need to consider these differences to achieve a realistic concatenation.
 
-The basic structure of the pipeline is presented at line 92 in *[task1_motion_editing.py](https://github.com/Shimingyi/COMP3360_Data_Driven_Animation/blob/2024/assignment_2/task1_motion_editing.py#L92)*. Upon completing the implementation, you should uncomment line 189 and examine the final result, which will be a combination of the walking and running motions as shown as above figure.
+The basic structure of the pipeline is presented at line 92 in *[task1_motion_editing.py](https://github.com/LamWS/COMP7508_Data_Driven_Animation/blob/2024/assignment_2/task1_motion_editing.py#L92)*. Upon completing the implementation, you should uncomment line 189 and examine the final result, which will be a combination of the walking and running motions as shown as above figure.
 
 The basic pipeline consists of five steps, each of which will be considered in your grading: 1. Locating the search windows 2. Calculating the similarity matrix 3. Determining the closest frames with real frame indices 4. Shifting motion2 to motion1 5. Utilizing your task1 function for interpolation.
 
@@ -120,7 +119,7 @@ Additionally, you will be eligible for bonus points if you can find ways to addr
 
 Motion matching is a sophisticated technology used in real-time character control systems. In this section, using a basic motion matching framework, you will required to design the matching variables and experiement how these variables impact the matching quality.
 
-If you want to modify the variables in the motion matching code *[task2_motion_matching.py](https://github.com/Shimingyi/COMP3360_Data_Driven_Animation/blob/2024/assignment_2/task2_motion_matching.py)*, you should pay attention to the following three parts:
+If you want to modify the variables in the motion matching code *[task2_motion_matching.py](https://github.com/LamWS/COMP7508_Data_Driven_Animation/blob/2024/assignment_2/task2_motion_matching.py)*, you should pay attention to the following three parts:
 
 1. Line 24 contains a feature mapping variable that records all feature shapes. While some features are already prepared, additional features with specific names can also be included by yourself.
 2. In line 420, you must determine which features to use by filling in their names in the *selected_feature_names* variable and their weights in the *selected_feature_weights* variable. Note that all features used must be present in the mapping variable.
