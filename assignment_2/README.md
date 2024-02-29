@@ -40,8 +40,8 @@ As same as assignment 1, the Task 1 & 2 also requires Python 3 runtime and Panda
 
 ```shell
 # recommend to use Anaconda to manage enviroment 
-conda create -n comp7580 python=3.8
-conda activate comp7580
+conda create -n comp7508 python=3.8
+conda activate comp7500
 conda install numpy scipy
 pip install panda3d
 
