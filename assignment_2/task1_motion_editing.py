@@ -119,7 +119,7 @@ def concatenate_two_motions(motion1, motion2, last_frame_index, start_frame_indx
     
     Useful functions:
         1. The differece between two vectors: np.linalg.norm(a - b)
-        2. The index of minimal value in a matrix: np.min(dtw)
+        2. The index of minimal value in a matrix: np.argmin(dtw)
         3. local_joint_rotations = motion.local_joint_rotations
         4. local_joint_positions = motion.local_joint_positions
         5. Visualize the dtw matrix:
