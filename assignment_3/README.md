@@ -53,8 +53,8 @@ https://user-images.githubusercontent.com/43705353/231973213-6caa0c81-3eab-4b0f-
 
 ```bash
 # recommend to use Anaconda to manage enviroment 
-$ conda create -n comp3360 python=3.10
-$ conda activate comp3360
+$ conda create -n comp7508 python=3.10
+$ conda activate comp7508
 $ conda install numpy scipy
 $ pip install panda3d taichi
 
@@ -65,7 +65,7 @@ $ python rigid_body_dynamic.py
 ### From the existing environment for Assignment1&2
 
 ```bash
-$ conda activate comp3360
+$ conda activate comp7508
 $ pip install taichi
 ```
 
