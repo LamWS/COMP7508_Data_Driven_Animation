@@ -22,10 +22,7 @@ git clone https://github.com/LamWS/COMP7508_Data_Driven_Animation -b 2024b
 
 ## Assignment 1 - Basic Character Animation
 
-In this assignment, you will become familiar with fundamental data structures and the animation creation workflow. Your task is to craft an animation clip using the provided infrastructure.
-Also, you need to understand the mathematical concepts behind Forward Kinematics (FK) and Inverse Kinematics (IK), and then to interpret the motion capture files and interact with them.
-
-Details: [[subfolder](./assignment_1)]
+Please see code frameswork and submission details [HERE](./assignment_1)
 
 #### Tutorial Slides
 
