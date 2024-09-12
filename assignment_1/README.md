@@ -1,8 +1,7 @@
 # Assignment 1 - Basic Character Animation
 
-Submission DDL: Feb. 19th (By HKU moodle)
+Submission DDL: October 1st 2024 (via [HKU moodle](https://moodle.hku.hk/mod/assign/view.php?id=3460042))
 
-All the code is available from HKU moodle
 
 ## Introduction
 
@@ -12,11 +11,12 @@ The experiment environment is re-designed by [GAMES105](https://github.com/GAMES
 
 #### Submission
 
-File format: A compress file [uid_name_assignment1.zip] with:
+File format: A compressed file [uid_name_assignment1.zip] with:
 
-1. video_file.mp4
+1. Rendered video.mp4
 2. task2_forward_kinematic.py
-3. uid_name_1.pdf
+3. task3_inverse_kinematic.py
+4. report.pdf
 
 ## Examples
 
