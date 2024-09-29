@@ -126,13 +126,13 @@ The CCD IK is the default option in the code, we provided all code modules alrea
    2. Find the vector from P3 to P4
    3. Find the vector from P3 to target
    4. Rotate the vector P3->P4 to the direction of P3->target (should be careful!)
-   5. Update chain orentation
+   5. Update chain orientation
    6. move the cursor to P2
 
-You are required to run with (Pls find the code in HKU moodle course page) *[task3_inverse_kinematic.py](https://github.com/LamWS/COMP7508_Data_Driven_Animation/blob/2024/assignment_1/task3_inverse_kinematic.py)* and try different IK settings(iteration number/start joint/end joint/target position), then report them with a screenshot and comparison table.
+You are required to run with *[task3_inverse_kinematic.py](./task3_inverse_kinematic.py)* and try different IK settings(iteration number/start joint/end joint/target position), then report them with a screenshot and comparison table.
 
 ```python
-# Inside the main function, you need to remove the commend in the beginning for testing different IK configrations
+# Inside the main function, you need to remove the commend in the beginning for testing different IK configurations
 
 IK_example(viewer, np.array([0.5, 0.75, 0.5]), 'RootJoint', 'lWrist_end')
 # IK_example(viewer, np.array([0.5, 0.75, 0.5]), 'lToeJoint_end', 'lWrist_end')
@@ -143,6 +143,6 @@ IK_example(viewer, np.array([0.5, 0.75, 0.5]), 'RootJoint', 'lWrist_end')
 
 ## Task 4 - Report
 
-* PDF format, no page size requriment so you can also prepare it with powerpoint or keynote
+* PDF format, no page size requirements so you can also prepare it with powerpoint or keynote
 * The first two lines should introduce your NAME and UID.
-* Screenshot for each subtask need to be included in the report.
+* Screenshot for each subtask need to be included in the report (Don't forget to try different IK settings and report their results).
