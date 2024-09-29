@@ -6,7 +6,7 @@ Here is the code repository of HKU course COMP7508. Any commit and issue will be
 
 Instructor: [Prof. Taku Komura](https://www.cs.hku.hk/index.php/people/academic-staff/taku)
 
-TAs: @[Mingyi Shi](https://rubbly.cn)  @[Zhouyingcheng Liao](https://zycliao.com/)
+TAs: @[Zhouyingcheng Liao](https://zycliao.com/)
 
 ![cover](https://github.com/LamWS/COMP7508_Data_Driven_Animation/assets/7709951/ec8518b9-ccf2-42cd-a18a-7d486be42081)
 
