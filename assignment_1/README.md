@@ -118,7 +118,7 @@ Screenshot of T-pose and walking motion will be expected in the assignment repor
 
 In Task 1, you might have been familiar with controlling the whole body pose by a few control points, but it's a built-in blender function. And in this task, you will try to evaluate the CCDIK in the python enviroment.
 
-The CCD IK is the default option in the code, we provided all code modules already, and you need to play with different code configration and make a report.![20230214113236](https://user-images.githubusercontent.com/7709951/218632375-a388278f-b185-405c-bf65-dd44d7459ea6.jpg)
+The CCD IK is the default option in the code, we provided all code modules already, and you need to play with different code configurations and make a report.![20230214113236](https://user-images.githubusercontent.com/7709951/218632375-a388278f-b185-405c-bf65-dd44d7459ea6.jpg)
 
 1. Given P1, ... P4, and target position of P4
 2. In each iteration:
@@ -126,13 +126,13 @@ The CCD IK is the default option in the code, we provided all code modules alrea
    2. Find the vector from P3 to P4
    3. Find the vector from P3 to target
    4. Rotate the vector P3->P4 to the direction of P3->target (should be careful!)
-   5. Update chain orentation
+   5. Update chain orientation
    6. move the cursor to P2
 
-You are required to run with (Pls find the code in HKU moodle course page) *[task3_inverse_kinematic.py](https://github.com/LamWS/COMP7508_Data_Driven_Animation/blob/2024/assignment_1/task3_inverse_kinematic.py)* and try different IK settings(iteration number/start joint/end joint/target position), then report them with a screenshot and comparison table.
+You are required to run with *[task3_inverse_kinematic.py](./task3_inverse_kinematic.py)* and try different IK settings(iteration number/start joint/end joint/target position), then report the results (screenshots) in comparison table(s).
 
 ```python
-# Inside the main function, you need to remove the commend in the beginning for testing different IK configrations
+# Inside the main function, you need to remove the commend in the beginning for testing different IK configurations
 
 IK_example(viewer, np.array([0.5, 0.75, 0.5]), 'RootJoint', 'lWrist_end')
 # IK_example(viewer, np.array([0.5, 0.75, 0.5]), 'lToeJoint_end', 'lWrist_end')
@@ -143,6 +143,6 @@ IK_example(viewer, np.array([0.5, 0.75, 0.5]), 'RootJoint', 'lWrist_end')
 
 ## Task 4 - Report
 
-* PDF format, no page size requriment so you can also prepare it with powerpoint or keynote
+* PDF format, no page size requirements so you can also prepare it with powerpoint or keynote
 * The first two lines should introduce your NAME and UID.
-* Screenshot for each subtask need to be included in the report.
+* Screenshot for each subtask need to be included in the report (Don't forget to try different IK settings and report their results).
