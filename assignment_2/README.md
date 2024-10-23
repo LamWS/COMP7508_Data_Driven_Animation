@@ -10,12 +10,12 @@ This assignment will provide a practical introduction to working with animation 
 
 The experiment environment is re-designed by [GAMES105](https://github.com/GAMES-105/GAMES-105), thanks for the open sourcing.
 
-#### Submission
+## Submission
 
 File format: A compress file **[uid_name_assignment2.zip]** with:
 
 1. video_file1 [motion concatenation], video_file2 [motion_matching](if you video file is too big, you can also prepare a link to google drive or onedrive)
-2. task1_motion_editing.py, task2_motion_matching.py
+2. task1_motion_editing.py, task2_motion_matching.py (do not rename these files)
 3. uid_name_2.pdf
 
 ## Examples
